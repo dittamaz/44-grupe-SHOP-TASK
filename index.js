@@ -1,10 +1,12 @@
 console.clear();
- 
-const pavadinimas = 'Parduotuve';
-const parduotuve = `Sveiki, atvyke i ${pavadinimas}!`;
 
-import { Prekes, preke1 } from "./js/Prekes.js";
+import { Prekes } from "./js/Prekes.js";
+import { Parde } from "./js/Parduotuve.js";
 
-const asortimentas = new preke1 (id, pavadinimas, isigijimoKaina, pardavimoKaina, kiekis);
+const parduotuve = new Parde ('Parde', 'inventorius', 'Eur');
+
+
+const preke1 = new Prekes ('1', 'Stalas', 30, 50);
+const preke2 = new Prekes ('1', 'Kede', 10, 25);
 
 
